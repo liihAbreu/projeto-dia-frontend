@@ -1,0 +1,33 @@
+@use '../variables.sass'
+
+#employees
+    #search-form
+        display: flex
+        margin-top: 2em
+        width: 100%
+        position: relative
+        input
+            width: 100%
+            padding: 10px 10px
+            position: relative
+            border: 1px solid variables.$color-main
+            color: variables.$black
+        button
+            position: absolute
+            top: 0
+            right: 0
+    .register-employees
+        margin-bottom: 2em
+        svg
+            font-size: 1.5rem
+
+.formRegisterEmployee
+    label
+        width: 100%
+    .form-check-input:checked[type=radio]
+        --bs-form-check-bg-image: none
+    .form-check-input:checked
+        background-color: variables.$color-main
+        border-color: transparent
+        width: 0.5em
+        height: 0.5em

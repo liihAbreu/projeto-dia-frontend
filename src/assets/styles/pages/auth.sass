@@ -1,0 +1,67 @@
+@use '../variables.sass'
+    
+#login,
+#register 
+    background-color: variables.$gray
+    padding: 1.5em 2em
+    margin: 2em auto
+    border: none 
+    border-radius: 5px
+    box-shadow: 4px 4px 10px lightgray
+    text-align: center
+    h2
+        text-align: center
+        font-size: 2.1em
+        margin-top: 0
+    .subtitle
+        font-weight: 600
+        color: variables.$black
+        margin-bottom: 1.5em
+    form
+        padding-bottom: 1.5em
+        margin-bottom: 1.5em
+        border-bottom: 1px solid variables.$black
+    p
+        text-align: center
+        a
+            font-weight: bold
+            color: variables.$color-secondary
+    .logo
+        width: 50%
+        margin: auto
+        margin-bottom: 10px
+
+#customBtn
+  display: inline-block
+  color: white
+  width: 250px
+  border-radius: 5px
+  white-space: nowrap
+
+#customBtn:hover 
+  cursor: pointer
+
+span.label
+  font-weight: bold
+
+span.icon 
+  display: inline-block
+  vertical-align: middle
+  width: 42px
+  height: 42px
+
+span.buttonText 
+  display: inline-block
+  vertical-align: middle
+  padding-left: 42px
+  padding-right: 42px
+  font-size: 14px
+  font-weight: bold
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif
+
+.Oauth 
+  display: flex
+  justify-content: center
+  padding-top: 10px
+  padding-bottom: 1.5em

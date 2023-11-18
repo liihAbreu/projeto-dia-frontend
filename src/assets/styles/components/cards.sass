@@ -1,0 +1,36 @@
+@use '../variables.sass'
+
+.cards
+    background-color: variables.$gray
+    margin-bottom: 2em
+    padding: 10px
+    border-radius: 10px
+    #card-func, #card-client
+        border: none
+        background-color: variables.$gray
+        .title-main
+            font-size: 1.5rem
+        p
+            span
+                font-weight: 600
+    a
+        display: flex
+        width: 20%
+        margin: 0 0 0 auto
+    #card-client
+        .card-header
+            background-color: transparent
+            display: flex
+            align-items: center
+            justify-content: space-between
+            font-size: 1.3rem
+            color: variables.$color-main
+            font-weight: bold
+            border: none
+            svg
+                margin-right: 1em
+
+@media screen and (max-width: 576px)
+    .cards
+        a
+            width: 40%

@@ -1,0 +1,25 @@
+name: User Admin CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+defaults:
+  run:
+    working-directory: ./
+
+jobs:
+  vulnerability:
+    name: Teste de Vulnerabilidade
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+          cache-dependency-path: ./package-lock.json
+      - run: npm ci
+      - run: npm audit --production

@@ -1,0 +1,54 @@
+@use '../variables.sass'
+
+#home, #home-noService
+    #user
+        display: flex
+        justify-content: space-between
+        color: variables.$color-main
+        h2
+            font-weight: bold
+    #services
+        h3
+            font-size: 1.5rem
+            margin-bottom: 1em
+        .swiper-button-prev, .swiper-button-next
+            color: variables.$color-main
+        .swiper-pagination-bullet-active
+            background: variables.$color-main
+        .card
+            border: none
+            box-shadow: none
+            .card-header
+                background-color: variables.$gray
+                border: none
+                color: variables.$color-main
+                font-weight: 600
+                span
+                    margin-right: 0.5em
+            .card-body
+                background-color: variables.$gray
+        .noService
+            display: flex
+            justify-content: center
+            height: 100%
+            align-items: center
+
+#services
+    height: 100%
+    .container 
+        height: 100%
+        .row
+            height: 100%
+
+#home
+    height: 100%
+
+#home-noService
+    height: calc( 100vh - 20em )
+
+@media screen and (max-width: 576px)
+    #home, #home-noService
+        #user
+            display: block
+            width: 100%
+            text-align: center

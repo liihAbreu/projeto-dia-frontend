@@ -1,0 +1,121 @@
+@use 'variables'
+
+body
+    background-color: variables.$white
+    font-family: variables.$fonte , sans-serif
+    color: variables.$black
+
+.btn,
+button,
+input[type="submit"] 
+  background-color: variables.$color-main
+  opacity: 1
+  padding: 10px 10px
+  color: variables.$white
+  font-size: 1rem
+  text-align: center
+  font-weight: 500
+  border-radius: 5px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  border: 1px solid variables.$color-main
+  svg
+    margin-left: 0.8em
+
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover
+  opacity: 0.9
+  background-color: variables.$color-main
+  color: variables.$white
+
+
+.title-main
+    color: variables.$color-main
+    font-size: 2rem
+    font-weight: bold
+
+.title-second
+    color: variables.$color-main
+    font-size: 1.2rem
+
+.icon
+    font-size: 0.8rem
+    color: variables.$color-main
+
+form 
+  display: flex
+  flex-direction: column
+
+
+label 
+  display: flex
+  flex-direction: column
+  text-align: left
+  width: 100%
+
+label span 
+  font-weight: bold
+  margin-bottom: 0.5em
+  color: variables.$black
+  font-size: 0.7em
+
+input,
+.form-control
+  background-color: variables.$gray
+  color: variables.$black
+  border-radius: 5px
+  border: 1px solid variables.$black
+  padding: 10px 8px
+  outline: none
+  margin-bottom: 0.6em
+
+input[type="submit"] 
+  margin-top: 1em
+  border: none
+
+.dropdown-menu[data-bs-popper]
+  left: -50px
+
+.dropdown-toggle::after
+  display: none
+
+.main
+  margin-top: 10em
+
+.center
+  text-align: center
+
+.button-form-action
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-top: 3%
+    text-align: left
+    align-items: center
+    margin-bottom: 3%
+    button
+        width: 98%
+        margin-top: 0.5rem
+
+.hide
+  display: none !important
+
+.breadcrumbs
+  display: flex
+  justify-content: center
+  margin-bottom: 4em
+
+.breadcrumb-not-active 
+  color: variables.$black
+  text-decoration: none
+
+.breadcrumb-active 
+  color: variables.$color-main
+  text-decoration: none
+
+@media screen and (min-width: 2000px)
+  .main
+    margin-top: 20em

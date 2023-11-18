@@ -1,0 +1,97 @@
+@use '../variables.sass'
+
+#nav
+    position: fixed
+    width: 100%
+    background: variables.$border-color 
+    border-bottom: 2px solid transparent
+    box-shadow: 0 4px 10px lightgrey
+    top: 0
+    z-index: 9
+    .row
+        text-align: center
+        align-items: center
+        width: 98%
+    .navbar-nav
+        display: flex
+        justify-content: space-between
+        width: 100%
+        align-items: center
+    .menu-list, .menu-list-employee
+        display: flex
+        align-items: center
+        .nav-link, .dropdown-item
+            color: variables.$color-main
+            font-weight: 600
+            font-size: 1.1rem
+    .menu-list
+        justify-content: space-around
+    .menu-list-employee
+        justify-content: end
+    .perfil svg
+        vertical-align: middle
+        font-size: 2.2rem
+        color: variables.$color-main
+
+    .logo img
+        width: 45%
+    .dropdown-menu[data-bs-popper]
+        left: -25px
+    .dropdown-item:focus, .dropdown-item:hover
+        background-color: variables.$gray
+    .menu-list-logout
+        display: flex
+        justify-content: end
+        align-items: center
+
+@media screen and (max-width: 992px)
+    .navbar-toggler
+        border: 1px solid variables.$color-main
+        float: right
+    .navbar
+        --bs-navbar-toggler-icon-bg: url(../../img/menu.png)
+    #nav
+        .row
+            text-align: left
+            width: 100%
+        .logo img
+            width: 25%
+    .offcanvas-body 
+        align-self: center
+        display: flex
+        align-items: center
+        .navbar-nav
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            text-align: center
+            color: variables.$color-main
+            font-weight: 600
+            .meu-list
+                text-align: center
+                margin-bottom: 20px
+                .nav-link
+                    color: variables.$color-main
+                    font-weight: 600
+                    margin-bottom: 10px
+            .perfil svg
+                vertical-align: middle
+                font-size: 2.2rem
+                color: variables.$color-main
+            .perfil .show
+                display: flex
+                flex-direction: column
+                align-items: center
+    .navbar-toggler:focus
+        box-shadow: none
+        border: 3px solid variables.$color-main
+
+@media screen and (max-width: 576px)
+    #nav .logo img 
+        width: 45%
+  
+
+@media screen and (max-width: 375px)
+    .navbar-toggler-icon
+        width: 1.2em
+        height: 1.2em
