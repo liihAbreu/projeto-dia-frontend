@@ -1,6 +1,9 @@
-export const api = "http://localhost:5000/api"
-export const uploads = "http://localhost:5000/uploads"
+export const api = "https://projeto-dia-backend-1850c29c9746.herokuapp.com/api"
+export const uploads = "https://projeto-dia-backend-1850c29c9746.herokuapp.com/uploads"
 export const urlImage = "http://localhost:5173/src/assets/img"
+
+//export const api = "http://localhost:5000/api"
+//export const uploads = "http://localhost:5000/uploads"
 
 export const requestConfig = (method, data, token = null, image= null) => {
     let config
