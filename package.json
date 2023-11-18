@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "js && vite build",
     "postinstall": "npm run build",
-    "serve-heroku": "node --host 0.0.0.0 --port $PORT preview",
+    "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview",
     "lint": "eslint src/**",
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "lint:fix": "eslint src/** --fix"
   },
-  "proxy": "http://localhost:5000/",
+  "proxy": "https://projeto-dia-frontend-ea8fd4498267.herokuapp.com/",
   "dependencies": {
     "@react-oauth/google": "^0.11.1",
     "@reduxjs/toolkit": "^1.9.6",
