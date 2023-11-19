@@ -427,7 +427,7 @@ const AlterClient = () => {
                 <Row>
                     <Col>
                         <div id="AlterClient">
-                            <h1 className="title-main center">Cadastrar um Cliente</h1>
+                            <h1 className="title-main center">Cadastro do Cliente</h1>
                             <Form onSubmit={handleSubmitClient} className="FormRegisterClient">
                                 <div className="dataClient">
                                     <Form.Group as={Row} className="mb-3" controlId="formPlaintextName">

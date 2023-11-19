@@ -52,7 +52,7 @@ const NavBar = () => {
                     <Row>
                         <Col xs={9} lg={3}>
                             <Navbar.Brand href="/" className="logo">
-                                <img src={`${urlImage}/logo-dia.png`} className="d-inline-block align-top" alt="Logo Projeto D.I.A"/>
+                                <img src="https://imagizer.imageshack.com/img922/4563/2W7gZq.png" className="d-inline-block align-top" alt="Logo Projeto D.I.A"/>
                             </Navbar.Brand>
                         </Col>
                         <Col xs={3} lg={9}>

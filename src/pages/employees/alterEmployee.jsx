@@ -169,7 +169,7 @@ const AlterEmployee = () => {
                                     previewImage ? URL.createObjectURL(previewImage) : `${uploads}/users/${user.profileImage}`
                                 } alt={user.name} />
                             ) : (
-                                <img className="profile-image" src={`${urlImage}/image-profile-default.png`} alt={user.name} />
+                                <img className="profile-image" src="https://imagizer.imageshack.com/img922/7001/vLc60Z.png" alt={user.name} />
                             )}
                             <Form.Group as={Row} className="mb-3 alterImage" controlId="formPlaintextImage">
                                 <Form.Label column sm="2" onClick={handleAlterUserData}>

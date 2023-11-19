@@ -73,7 +73,7 @@ const Register = () => {
                     <Row>
                         <Col lg={{ span: 4, offset: 4 }} md={{ span: 6, offset: 3 }}>
                             <div id="register">
-                                <img src={`${urlImage}/logo-dia.png`} className="logo" alt="Logo Projeto D.I.A" />
+                                <img src="https://imagizer.imageshack.com/img922/4563/2W7gZq.png" className="logo" alt="Logo Projeto D.I.A" />
                                 <p className="subtitle" >Registre-se para utilizar o sistema.</p>
                                 <div className="Oauth">
                                     <GoogleLogin size= "large"  onSuccess={credentialResponse => {googleRegister(credentialResponse);}} onError={() => {console.log('Login Failed');}}/>

@@ -26,7 +26,7 @@ const Footer = () => {
                     <Row>
                         <Col lg={4}>
                             <div className="logo">
-                                <img src={`${urlImage}/logo-dia-branco.png`} alt="Logo Projeto D.I.A" />
+                                <img src="https://imagizer.imageshack.com/img923/3749/UncTdc.png" alt="Logo Projeto D.I.A" />
                             </div>
                         </Col>
                         <Col lg={4}>

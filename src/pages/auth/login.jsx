@@ -73,7 +73,7 @@ const Login = () => {
                     <Row>
                         <Col lg={{ span: 4, offset: 4 }} md={{ span: 6, offset: 4 }}>
                             <div id="login">
-                                <img src={`${urlImage}/logo-dia.png`} className="logo" alt="Logo Projeto D.I.A" />
+                                <img src="https://imagizer.imageshack.com/img922/4563/2W7gZq.png" className="logo" alt="Logo Projeto D.I.A" />
                                 <p className="subtitle" >Faça o login para genrenciar as suas tarefas. </p>
                                 <div className="Oauth">
                                     <GoogleLogin size= "large"  onSuccess={credentialResponse => {googleLogin(credentialResponse);}} onError={() => {console.log('Login Failed');}}/>
