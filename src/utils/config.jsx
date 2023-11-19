@@ -1,6 +1,6 @@
 export const api = "https://projeto-dia-backend-1850c29c9746.herokuapp.com/api"
 export const uploads = "https://projeto-dia-backend-1850c29c9746.herokuapp.com/uploads"
-export const urlImage = "https://liihabreu.github.io/projeto-dia-frontend/src/assets/img"
+export const urlImage = "https://projeto-dia-frontend.vercel.app/src/assets/img"
 
 //export const api = "http://localhost:5000/api"
 //export const uploads = "http://localhost:5000/uploads"
